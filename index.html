@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Javiera Maldonado Agurto" />
+
+    <title>Blog Front End</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logos/adl.png" />
+
+    <!--BOOTSTRAP CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--BOOTSTRAP JS-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQUERY -->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!--ESTILO PROPIO CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- JAVASCRIPT PROPIO -->
+    <script defer src="./assets/js/index.js"></script>
+
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/d5b48fda4e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header o Barra de inicio-->
+    <header class="header">
+      <img class="header__icon" src="./assets/img/logos/adl.png"
+      alt="logo-adl"/>
+      <span class="header__title">Blog Front End</span>
+    </header>
+    
+    <!--Contenedor Novedades-->
+    <hr class="hr-bottom d-none d-sm-block" />
+    <h1 class="titulos">Novedades</h1>
+    <div class="novedades">
+      <div class="novedades__left">
+        <img class="novedades__image" src="./assets/img/posts/bootstrap.png"
+        alt="bootstrap"/>
+        <p class="novedades__date">24 Noviembre, 2022</p>
+        <h2 class="novedades__title">
+          Modifica el tema de Bootstrap con variables CSS
+        </h2>
+        <div class="logo">
+          <img class="logo__adl" src="./assets/img/logos/adl.png"
+          alt="logo-adl"/>
+          <span class="logo__text">Desafio Latam</span>
+        </div>
+      </div>
+
+      <!-- Contenedor Novedades de la derecha -->
+      <div class="novedades__right">
+        <div class="post">
+          <img class="post__img" src="./assets/img/posts/Herencia-JS.png"
+          alt="imagenpost"/>
+          <div class="post__content">
+            <p class="novedades__date">24 Noviembre, 2022</p>
+            <h2 class="novedades__title">Herencia en JavaScript</h2>
+            <div class="logo">
+              <img class="logo__adl" src="./assets/img/logos/adl.png"
+              alt="logo-adl"/>
+              <span class="logo__text">Desafio Latam</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img class="post__img" src="./assets/img/posts/Etiquetas-semánticas-HTML.png"
+          alt="imagenspost"/>
+          <div class="post__content">
+            <p class="novedades__date">24 Noviembre, 2022</p>
+            <h2 class="novedades__title">Etiquetas semánticas</h2>
+            <div class="logo">
+              <img class="logo__adl" src="./assets/img/logos/adl.png"
+              alt="logo-adl"/>
+              <span class="logo__text">Desafio Latam</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <img class="post__img" src="./assets/img/posts/reactComponents.png"
+          alt="imagenpost"/>
+          <div class="post__content">
+            <p class="novedades__date">24 Noviembre, 2022</p>
+            <h2 class="novedades__title">Componentes React</h2>
+            <div class="logo">
+              <img class="logo__adl" src="./assets/img/logos/adl.png"
+              alt="logo-adl"/>
+              <span class="logo__text">Desafio Latam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hr-bottom d-none d-sm-block" />
+    
+    <!-- Contenedor Populares -->
+    <!-- Tarjetas a la izquierda -->
+    <h1 class="titulos">Populares</h1>
+    <div class="container-flex">
+      <div class="populares">
+        <div class="row row-cols-1 row-cols-md-2 g-4 ps-4">
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="./assets/img/posts/vue-components.png" class="card__img" alt="vue"/>
+              <div class="card-body">
+                <p class="card__date">24 Noviembre, 2022</p>
+                <h5 class="card__title">Componente Vue</h5>
+                <div class="logo">
+                  <img class="logo__adl" src="./assets/img/logos/adl.png"alt="logo-adl"/>
+                  <span class="logo__text">Desafio Latam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="./assets/img/posts/api-js.png" class="card__img" alt="api"/>
+              <div class="card-body">
+                <p class="card__date">24 Noviembre, 2022</p>
+                <h5 class="card__title">Consumo de API con JavaScript</h5>
+                <div class="logo">
+                  <img class="logo__adl" src="./assets/img/logos/adl.png"alt="logo-adl"/>
+                  <span class="logo__text">Desafio Latam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="./assets/img/posts/sass.jpg"class="card__img"alt="sass"/>
+              <div class="card-body">
+                <p class="card__date">24 Noviembre, 2022</p>
+                <h5 class="card__title">CSS reutilizable con Sass</h5>
+                <div class="logo">
+                  <img class="logo__adl" src="./assets/img/logos/adl.png" alt="logo-adl"/>
+                  <span class="logo__text">Desafio Latam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100">
+              <img src="./assets/img/posts/bootstrap.png"class="card__img"alt="sass"/>
+              <div class="card-body">
+                <p class="card__date">24 Noviembre, 2022</p>
+                <h5 class="card__title">CSS reutilizable con Sass</h5>
+                <div class="logo">
+                  <img class="logo__adl"src="./assets/img/logos/adl.png"alt="logo-adl"/>
+                  <span class="logo__text">Desafio Latam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor Populares -->
+      <!-- Tarjetas a la derecha -->
+      <div class="populares__right">
+        <div class="card-2">
+          <div class="card_1--color">
+            <img class="marcas" src="./assets/img/logos/html.png" alt="" />
+            <p class="texto">HTML</p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card_2--color">
+            <img class="marcas" src="./assets/img/logos/js.png" alt="" />
+            <p class="texto-1">Javascript</p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card_3--color">
+            <img class="marcas" src="./assets/img/logos/css.png" alt="" />
+            <p class="texto">CSS</p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card_4--color">
+            <img class="marcas" src="./assets/img/logos/react.png" alt="" />
+            <p class="texto">React</p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card_5--color">
+            <img class="marcas" src="./assets/img/logos/vue.png" alt="" />
+            <p class="texto">Vue</p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card_6--color">
+            <img class="marcas" src="./assets/img/logos/bootstrap-logo.png"alt="bootstrap"/>
+            <p class="texto-1">Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <hr class="hr-bottom d-none d-sm-block" />
+      <img class="footer__icon" src="./assets/img/logos/adl.png"alt="logo-adl"/>
+      <span class="footer__title">Blog Front End</span>
+      <p class="footer__end">Desafio Latam - 2023</p>
+    </footer>
+  </body>
+</html>
